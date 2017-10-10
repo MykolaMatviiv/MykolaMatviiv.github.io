@@ -1,0 +1,59 @@
+.alignnone {}
+.aligncenter,
+div.aligncenter {display: block;margin-left: auto;margin-right: auto;}
+.alignright {display: inline;float: right;}
+.alignleft {display: inline;float: left;}
+a img.alignright {}
+a img.alignnone {}
+a img.alignleft {}
+a img.aligncenter {}
+.wp-caption {}
+.wp-caption.alignnone {}
+.wp-caption.alignleft {}
+.wp-caption.alignright {}
+.wp-caption img {}
+.wp-caption p.wp-caption-text {font-size: 90%;}
+.gallery-caption{}
+.bypostauthor{}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.alignleft {
+	float: left;
+margin: 5px 10px 0px 0px;
+}
+
+.td-spik {      
+height: 100%;
+width: 100%;
+}
+
+.td-ob {
+text-align: center; 
+border: 1px solid #000; 
+font-size: 14px; 
+color: #000; 
+background-color: 
+#c9b167; 
+vertical-align: middle;
+}
+
+
+.td-time {
+text-align: center; border: 1px solid #000; background-color: #12331e; font-size: 14px; color: #fff; vertical-align: middle;
+}
+
+.td-time-ob {
+text-align: center; border: 1px solid #000; background-color: #c9b167; font-size: 14px; color: #000; vertical-align: middle;
+}
+.td-dop {
+text-align: left; padding: 4px 4px 4px 4px; border: 1px solid #000; font-size: 14px; color: #000; vertical-align: middle;
+}
+.td-zag {
+text-align: center; border: 1px solid #000; background-color: #12331e; font-size: 20px; color: #fff; vertical-align: middle;
+}
