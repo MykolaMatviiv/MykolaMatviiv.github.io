@@ -1,0 +1,136 @@
+.center{
+	text-align: center;
+}
+.title{
+	font: 700 31px "Raleway Bold","Arial",sans-serif;
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------------*/
+/*---------------------fun_fact--------------------------*/
+/*-------------------------------------------------------*/
+.fun_fact{
+	margin: 100px 0 100px;
+	font: 400 18px "Lora","Arial",sans-serif;
+	.content{
+		&:first-child{
+			border-right: 1px solid #e5e5e5;
+		}
+		&:last-child{
+			border-left: 1px solid #e5e5e5;
+		}
+		.number{
+			margin: 30px 0;
+			font-size: 65px;
+			span{
+				color: #1b7be0;
+			}
+		}
+		.sub_title{
+			font-family: 'Open Sans Semibold', serif;
+			font-size: 18px;
+			color: #2f2933;
+			margin: 20px 0;
+		}
+		.description{
+			font-size: 14px;
+			color: #666666;
+		}
+	}
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------testimonial-----------------------*/
+/*-------------------------------------------------------*/
+.testimonial{
+	position: relative;
+	padding: 90px 0;
+	background-image: url(../img/testimonial.jpg);
+	background-size: cover;
+	background-position: center center;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(13, 59, 107, 0.85);
+		z-index: 1;
+	}
+	.title{
+		color: #ffffff;
+		z-index: 2;
+		position: relative;
+		margin: 10px 0;
+	}
+	.content{
+		z-index: 2;
+		position: relative;
+	}
+	.testimonial_text{
+		font: 400 14px "Lora","Arial",sans-serif;
+		line-height: 30px;
+		color: #ebebeb;
+		background: #1b7ce0;
+		border-radius: 2%;
+		position: relative;
+		margin: 40px 0 25px;
+		padding: 40px 45px;
+		&:after{
+			top: 100%;
+			left: 45px;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(255,255,255,0);
+			border-top-color: #1b7ce0;
+			border-width: 15px;
+		}
+	}
+	.testimonial_author{
+		display: flex;
+		align-items: center;
+		font: 400 14px "Raleway","Arial",sans-serif;
+		color: #ffffff;
+		text-transform: uppercase;
+		i.fa-circle{
+			font-size: 30px;
+		}
+		.name{
+			margin: auto 17px;
+		}
+		.min_inf{
+			text-transform: none;
+			&:before{
+				content: "/";
+				margin-right: 10px
+			}
+		}
+	}
+}
+
+
+/*-------------------------------------------------------*/
+/*-------------------------media-------------------------*/
+/*-------------------------------------------------------*/
+@media only screen and (max-width : 991.9px){
+	.fun_fact{
+		.content{
+			border: none !important;
+		}
+	}
+	.testimonial{
+		.col-md-12{
+			order: -1;
+		}
+	}
+}
+
+/*@media only screen and (max-width : 767.9px){
+
+}*/
