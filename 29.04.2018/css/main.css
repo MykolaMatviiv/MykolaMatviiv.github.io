@@ -1,0 +1,117 @@
+.center {
+  text-align: center; }
+
+.title {
+  font: 700 31px "Raleway Bold","Arial",sans-serif;
+  text-transform: uppercase; }
+
+/*-------------------------------------------------------*/
+/*---------------------fun_fact--------------------------*/
+/*-------------------------------------------------------*/
+.fun_fact {
+  margin: 100px 0 100px;
+  font: 400 18px "Lora","Arial",sans-serif; }
+  .fun_fact .content:first-child {
+    border-right: 1px solid #e5e5e5; }
+  .fun_fact .content:last-child {
+    border-left: 1px solid #e5e5e5; }
+  .fun_fact .content .number {
+    margin: 30px 0;
+    font-size: 65px; }
+    .fun_fact .content .number span {
+      color: #1b7be0; }
+  .fun_fact .content .sub_title {
+    font-family: 'Open Sans Semibold', serif;
+    font-size: 18px;
+    color: #2f2933;
+    margin: 20px 0; }
+  .fun_fact .content .description {
+    font-size: 14px;
+    color: #666666; }
+
+/*-------------------------------------------------------*/
+/*---------------------testimonial-----------------------*/
+/*-------------------------------------------------------*/
+.testimonial {
+  position: relative;
+  padding: 90px 0;
+  background-image: url(../img/testimonial.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center; }
+  .testimonial:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 59, 107, 0.85);
+    z-index: 1; }
+  .testimonial .title {
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    margin: 10px 0; }
+  .testimonial .content {
+    z-index: 2;
+    position: relative; }
+  .testimonial .testimonial_text {
+    font: 400 14px "Lora","Arial",sans-serif;
+    line-height: 30px;
+    color: #ebebeb;
+    background: #1b7ce0;
+    -webkit-border-radius: 2%;
+            border-radius: 2%;
+    position: relative;
+    margin: 40px 0 25px;
+    padding: 40px 45px; }
+    .testimonial .testimonial_text:after {
+      top: 100%;
+      left: 45px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #1b7ce0;
+      border-width: 15px; }
+  .testimonial .testimonial_author {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font: 400 14px "Raleway","Arial",sans-serif;
+    color: #ffffff;
+    text-transform: uppercase; }
+    .testimonial .testimonial_author i.fa-circle {
+      font-size: 30px; }
+    .testimonial .testimonial_author .name {
+      margin: auto 17px; }
+    .testimonial .testimonial_author .min_inf {
+      text-transform: none; }
+      .testimonial .testimonial_author .min_inf:before {
+        content: "/";
+        margin-right: 10px; }
+
+/*-------------------------------------------------------*/
+/*-------------------------media-------------------------*/
+/*-------------------------------------------------------*/
+@media only screen and (max-width: 991.9px) {
+  .fun_fact .content {
+    border: none !important; }
+  .testimonial .col-md-12 {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1; } }
+
+/*@media only screen and (max-width : 767.9px){
+
+}*/
