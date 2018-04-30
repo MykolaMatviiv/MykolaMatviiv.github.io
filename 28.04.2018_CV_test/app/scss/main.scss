@@ -229,7 +229,7 @@ a{
 	}
 }
 
-@media only screen and (max-width : 981px){
+/*@media only screen and (max-width : 981px){
 	.fun_fact{
 		.content{
 			.number{
@@ -269,16 +269,16 @@ a{
 					.form-control{
 						font: 400 27px "Lora","Arial",sans-serif;
 						height: 80px;
-						&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+						&::-webkit-input-placeholder { 
 							font: 400 27px "Lora","Arial",sans-serif;
 						}
-						&::-moz-placeholder { /* Firefox 19+ */
+						&::-moz-placeholder { 
 							font: 400 27px "Lora","Arial",sans-serif;
 						}
-						&:-ms-input-placeholder { /* IE 10+ */
+						&:-ms-input-placeholder { 
 							font: 400 27px "Lora","Arial",sans-serif;
 						}
-						&:-moz-placeholder { /* Firefox 18- */
+						&:-moz-placeholder { 
 							font: 400 27px "Lora","Arial",sans-serif;
 						}
 						option{
@@ -308,4 +308,4 @@ a{
 			}
 		}
 	}
-}
+}*/
