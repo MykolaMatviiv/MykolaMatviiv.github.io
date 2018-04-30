@@ -105,12 +105,7 @@
 /*-------------------------------------------------------*/
 @media only screen and (max-width: 991.9px) {
   .fun_fact .content {
-    border: none !important; }
-  .testimonial .col-md-12 {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1; } }
+    border: none !important; } }
 
 /*@media only screen and (max-width : 767.9px){
 
