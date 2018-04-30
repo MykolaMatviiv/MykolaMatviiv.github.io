@@ -1,9 +1,15 @@
+@charset "UTF-8";
 .center {
   text-align: center; }
 
 .title {
   font: 700 31px "Raleway Bold","Arial",sans-serif;
   text-transform: uppercase; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 /*-------------------------------------------------------*/
 /*---------------------fun_fact--------------------------*/
@@ -101,16 +107,84 @@
         margin-right: 10px; }
 
 /*-------------------------------------------------------*/
+/*-----------------------сontact-------------------------*/
+/*-------------------------------------------------------*/
+.contact .top_bg_img {
+  background-image: url(../img/Divider.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  height: 48px; }
+
+.contact .contact_block {
+  padding: 50px 0; }
+  .contact .contact_block .title {
+    line-height: 31px;
+    color: #111;
+    margin-bottom: 10px; }
+  .contact .contact_block .content {
+    margin: 46px 0; }
+  .contact .contact_block .content_left form .form-control {
+    margin-bottom: 10px;
+    -webkit-border-radius: 0px !important;
+            border-radius: 0px !important;
+    font: 400 14px "Lora","Arial",sans-serif;
+    color: #666;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px; }
+    .contact .contact_block .content_left form .form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+    .contact .contact_block .content_left form .form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+    .contact .contact_block .content_left form .form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+    .contact .contact_block .content_left form .form-control:-moz-placeholder {
+      /* Firefox 18- */
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+    .contact .contact_block .content_left form .form-control option {
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+  .contact .contact_block .content_left form textarea {
+    max-height: 210px;
+    min-height: 210px; }
+  .contact .contact_block .content_left form button {
+    font: 400 16px "Lora","Arial",sans-serif;
+    color: #fff;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin: 10px 0; }
+  .contact .contact_block .content_right .google_map#map {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 40px; }
+  .contact .contact_block .content_right .contact_information .min_title {
+    font-family: 'Raleway Sans Semibold', serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 16px; }
+  .contact .contact_block .content_right .contact_information .information p {
+    font: 400 14px "Lora","Arial",sans-serif;
+    line-height: 14px;
+    color: #666; }
+    .contact .contact_block .content_right .contact_information .information p a {
+      font: 400 14px "Lora","Arial",sans-serif;
+      color: #666; }
+
+/*-------------------------------------------------------*/
 /*-------------------------media-------------------------*/
 /*-------------------------------------------------------*/
 @media only screen and (max-width: 991.9px) {
   .fun_fact .content {
-    border: none !important; }
-  .testimonial .col-md-12 {
-    -webkit-box-ordinal-group: 0;
-    -webkit-order: -1;
-        -ms-flex-order: -1;
-            order: -1; } }
+    border: none !important; } }
 
 /*@media only screen and (max-width : 767.9px){
 
