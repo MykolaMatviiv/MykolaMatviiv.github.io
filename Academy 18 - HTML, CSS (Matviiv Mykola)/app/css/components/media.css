@@ -1,0 +1,95 @@
+@media only screen and (max-width: 1000px) {
+  .blog .title {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 768px) {
+  .blogs, .aside {
+    width: 100%; }
+  .col-afset-10 {
+    padding: 0; }
+  .header-icon {
+    display: none; }
+  .header-search {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+  .logo-header-block {
+    width: 100%; }
+    .logo-header-block a {
+      display: inline-block;
+      margin: auto;
+      margin-top: 55px; }
+  .mobile-nav {
+    display: block; }
+    .mobile-nav:hover {
+      cursor: pointer;
+      transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transition: all 500ms;
+      -webkit-transition: all 500ms;
+      -moz-transition: all 500ms;
+      -o-transition: all 500ms;
+      -ms-transition: all 500ms;
+      -webkit-transition-delay: 0ms;
+           -o-transition-delay: 0ms;
+              transition-delay: 0ms; }
+      .mobile-nav:hover span:after, .mobile-nav:hover span:before {
+        left: 8px;
+        transition: all 800ms;
+        -webkit-transition: all 800ms;
+        -moz-transition: all 800ms;
+        -o-transition: all 800ms;
+        -ms-transition: all 800ms;
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+  #menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.95);
+    transition: all 800ms;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -o-transition: all 800ms;
+    -ms-transition: all 800ms;
+    z-index: 9999999; }
+    #menu ul {
+      padding: 0;
+      margin-top: 70px;
+      width: 100%; }
+      #menu ul li {
+        display: block;
+        line-height: 2;
+        margin: 0;
+        text-align: center;
+        color: #fff; }
+        #menu ul li a {
+          color: #fff;
+          font-size: 21px; }
+    #menu.active {
+      left: 0;
+      opacity: 1; }
+    #menu #close-nav {
+      display: block; } }
+
+@media only screen and (max-width: 600px) {
+  .blog .img {
+    width: 100%; }
+    .blog .img .blog-img {
+      width: 100%; }
+  .blog .description {
+    width: 100%;
+    margin-top: -60px; }
+    .blog .description .top {
+      padding: 25px; }
+    .blog .description .exerpt {
+      margin: 25px 0; }
+    .blog .description .btn-more {
+      margin: 0 0 45px; } }
