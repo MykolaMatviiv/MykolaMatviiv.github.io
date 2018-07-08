@@ -1,0 +1,112 @@
+@media only screen and (max-width: 1050px) {
+  .main-contant .col-25 {
+    width: 100%; }
+  .main-contant .col-75 {
+    width: 100%; }
+  .main-contant .schedule {
+    padding-left: 0; }
+  .doctor-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .doctor-info img {
+      width: 25%; }
+    .doctor-info .main-info {
+      margin-left: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .logo-header-block {
+    width: 100%; }
+    .logo-header-block a {
+      display: inline-block;
+      margin: auto;
+      margin-top: 55px; }
+  .mobile-nav {
+    display: block; }
+    .mobile-nav:hover {
+      cursor: pointer;
+      transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transition: all 500ms;
+      -webkit-transition: all 500ms;
+      -moz-transition: all 500ms;
+      -o-transition: all 500ms;
+      -ms-transition: all 500ms;
+      -webkit-transition-delay: 0ms;
+           -o-transition-delay: 0ms;
+              transition-delay: 0ms; }
+      .mobile-nav:hover span:after, .mobile-nav:hover span:before {
+        left: 8px;
+        transition: all 800ms;
+        -webkit-transition: all 800ms;
+        -moz-transition: all 800ms;
+        -o-transition: all 800ms;
+        -ms-transition: all 800ms;
+        -webkit-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 500ms; }
+  #menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.95);
+    transition: all 800ms;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -o-transition: all 800ms;
+    -ms-transition: all 800ms;
+    z-index: 9999999; }
+    #menu ul {
+      padding: 0;
+      margin-top: 70px;
+      width: 100%;
+      display: block; }
+      #menu ul li {
+        display: block;
+        line-height: 2;
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        margin: 15px auto; }
+        #menu ul li a {
+          color: #fff;
+          font-size: 21px; }
+    #menu.active {
+      left: 0;
+      opacity: 1; }
+    #menu #close-nav {
+      display: block; }
+    #menu .message-count {
+      height: 25px;
+      width: 25px;
+      top: -15px;
+      right: -15px; } }
+
+@media only screen and (max-width: 550px) {
+  .doctor-info {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .doctor-info img {
+      width: 100%; }
+    .doctor-info .main-info {
+      margin-left: 0px;
+      width: 100%; }
+      .doctor-info .main-info .name {
+        text-align: center; } }
+
+@media only screen and (max-width: 375px) {
+  .schedule {
+    margin-left: -10px;
+    margin-right: -10px; } }

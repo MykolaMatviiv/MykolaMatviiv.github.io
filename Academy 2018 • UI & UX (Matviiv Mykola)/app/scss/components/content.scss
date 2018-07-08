@@ -1,0 +1,144 @@
+.main-contant{
+	margin-top: 50px;
+}
+.doctor-info{
+	background-color: #eeeeee;
+	padding: 15px;
+	margin-bottom: 70px;
+	img{
+		width: 100%;
+		min-width: 200px;
+	}
+	.main-info{
+		& > div{
+			font-family: "Open Sans";
+			font-size: 15px;
+			font-weight: 400;
+			font-style: italic;
+			line-height: 24px;
+			margin: 5px;
+			a:hover{
+				color: #b59f5b;
+			}
+		}
+		i{
+			width: 25px;
+			font-size: 17px;
+		}
+		.name{
+			color: #0f0d0e;
+			font-family: "Josefin Sans";
+			font-size: 17px;
+			font-weight: 700;
+			line-height: 24px;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 15px 10px;
+		}
+	}
+}
+
+.schedule{
+	padding-left: 35px;
+	.title{
+		color: #0f0d0e;
+		font-family: "Josefin Sans";
+		font-size: 23px;
+		font-weight: 700;
+		line-height: 24px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 23px;
+	}
+}
+.schedule-table{
+	width: 100%;
+	border-collapse: collapse;
+	position: relative;
+	overflow: hidden;
+	th{
+		width: 12.5%;
+	}
+	td,th{
+		text-align: center;
+		border: 2px solid #b6b6b6;
+		height: 25px;
+		position: relative;
+	}
+	.night{
+		td:first-child{
+			background-color: rgba(30, 27, 58, 0.4);
+			&:before{
+				content: "\f186";
+				font-family: "Font Awesome 5 Free";
+				color: #080059;
+				padding-right: 5px;
+			}
+		}
+	}
+	.day{
+		td:first-child{
+			background-color: rgba(255, 202, 90, 0.4);
+			&:before{
+				content: "\f185";
+				font-family: "Font Awesome 5 Free";
+				color: #f4a600;
+				padding-right: 5px;
+			}
+		}
+	}
+	/*td{
+		&:first-child:hover::before{
+			border: none;
+		}
+		&:hover::before{
+			content: "";
+			position: absolute;
+			border: 2px solid #1e1b3a;
+			right: 100%;
+			bottom: -2px;
+			height: 100%;
+			width: 900%;
+		}
+	}
+	td, th{
+		&:first-child:hover::after{
+			border: none;
+		}
+		&:hover::after{
+			content: "";
+			position: absolute;
+			border: 2px solid #1e1b3a;
+			left: -2px;
+			bottom: 100%;
+			height: 2700%;
+			width: 100%;
+		}
+	}*/
+	.add-icon{
+		span{
+			cursor: pointer;
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			&:after{
+				content: "\f0fe";
+				font-family: "Font Awesome 5 Free";
+				color: #77964a;
+				position: absolute;
+				right: 5px;
+				top: 5px;
+			}
+			&.added{
+				background-color: #77964a;
+				&:after{
+					content: "\f146";
+					font-family: "Font Awesome 5 Free";
+					color: #a82f40;
+				}
+			}
+		}
+	}
+}
