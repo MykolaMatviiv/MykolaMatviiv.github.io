@@ -1,0 +1,38 @@
+.change-profile-page{
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .change-profile-page-wrap{
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  .change-profile-form{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    label{
+      width: 100%;
+    }
+    .mat-form-field{
+      width: 100%;
+    }
+    .my-errors{
+      color: red;
+    }
+    .ubdate-info{
+      background-color: #1ab188;
+      color:#ffffff;
+      margin: 15px;
+      width: 100%;
+      &:hover{
+          background-color: #0d785c;
+      }
+    } 
+  }
+
+}

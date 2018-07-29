@@ -1,0 +1,46 @@
+<div class="login-page">
+  <div class="login-page-wrap">
+    <div class="login-sign-up">
+      <button class="login" mat-raised-button>LOGIN</button>
+      <button class="sign-up" mat-raised-button (click)="onClick('registration')">SIGN UP</button>
+    </div>
+    <form name="login">
+      <mat-form-field>
+        <input
+          matInput
+          type="email" 
+          name="email"
+          [(ngModel)]="user.email"
+          placeholder="Your email"
+          required
+          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          #emailInput="ngModel">
+      </mat-form-field>
+      <div class="my-errors" [hidden]="!emailInput.errors || !emailInput.touched || (emailInput.errors && !emailInput.errors.required)">
+        Email can't be empty
+      </div>
+      <div class="my-errors" [hidden]="!emailInput.errors || (emailInput.errors && !emailInput.errors.pattern)">
+        Wrong format
+      </div>
+      <mat-form-field>
+        <input
+          matInput
+          type="password"
+          name="password"
+          [(ngModel)]="user.password"
+          placeholder="Your password"
+          required
+          minlength="3"
+          #passwordInput="ngModel">
+      </mat-form-field>
+      <div class="my-errors" [hidden]="!passwordInput.errors || !passwordInput.touched || (passwordInput.errors && !passwordInput.errors.required)">
+        Password can't be empty
+      </div>
+      <div class="my-errors" [hidden]="!passwordInput.errors || (passwordInput.errors && !passwordInput.errors.minlength)">
+        Min length 3 characters
+      </div>
+      <button class="btn-login-form" mat-raised-button type="button" (click)="login(!passwordInput.errors && !emailInput.errors)">Login</button>
+      <button class="forgot-password" mat-raised-button (click)="onClick('forgotpassword')">Forget password?</button>
+    </form>
+  </div>    
+</div>

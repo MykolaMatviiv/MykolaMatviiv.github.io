@@ -1,0 +1,14 @@
+.top-block{
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    mat-tab-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    mat-tab-labels{
+        justify-content: space-between;
+    }
+}

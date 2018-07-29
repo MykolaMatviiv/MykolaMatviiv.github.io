@@ -1,0 +1,50 @@
+.registration-page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-sign-up{
+      text-align: center;
+      button{
+          margin: 15px;
+      }
+      .sign-up{
+          background-color: #1ab188;
+          cursor: initial;
+      }
+      .login:hover{
+          background-color: #87e1c9;
+      }
+  }
+  
+  .registration-page-wrap{
+    width: 40%;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  form{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .mat-form-field{
+      width: 100%;
+    }
+    .my-errors{
+      color: red;
+    }
+    .registration{
+      background-color: #1ab188;
+      color:#ffffff;
+      margin: 15px;
+      width: 100%;
+      &:hover{
+          background-color: #0d785c;
+      }
+    } 
+  }
+
+}
+
+

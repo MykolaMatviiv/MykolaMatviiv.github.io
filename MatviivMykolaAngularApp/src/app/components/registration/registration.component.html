@@ -1,0 +1,64 @@
+<div class="registration-page">
+  <div class="registration-page-wrap">
+    <div class="login-sign-up">
+      <button class="login" mat-raised-button type="button" (click) = "onClick()">LOGIN</button>
+      <button class="sign-up" mat-raised-button>SIGN UP</button>
+    </div>
+    <form name="registration">
+      <mat-form-field>
+        <input matInput [(ngModel)]="newuser.firstname" type="text" placeholder="First name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [(ngModel)]="newuser.lastname" type="text" placeholder="Last name">
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="newuser.email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          #emailInput="ngModel">
+      </mat-form-field>
+      <div class="my-errors" [hidden]="!emailInput.errors || !emailInput.touched || (emailInput.errors && !emailInput.errors.required)">
+        Email can't be empty
+      </div>
+      <div class="my-errors" [hidden]="!emailInput.errors || (emailInput.errors && !emailInput.errors.pattern)">
+        Wrong format
+      </div>
+      <mat-form-field>
+        <input 
+          matInput
+          [(ngModel)]="newuser.year"
+          type="text"
+          placeholder="Date of birth"
+          pattern="^\d{4}$"
+          #yearInput="ngModel">
+      </mat-form-field>
+      <div class="my-errors" [hidden]="!yearInput.errors || (yearInput.errors && !yearInput.errors.pattern)">
+        Year format : "YYYY".
+      </div>
+      <mat-form-field>
+        <input
+          matInput
+          [(ngModel)]="newuser.password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+          minlength="3"
+          #passwordInput="ngModel">
+      </mat-form-field>
+      <div class="my-errors" [hidden]="!passwordInput.errors || !passwordInput.touched || (passwordInput.errors && !passwordInput.errors.required)">
+        Password can't be empty
+      </div>
+      <div class="my-errors" [hidden]="!passwordInput.errors || (passwordInput.errors && !passwordInput.errors.minlength)">
+          Min length 3 characters
+      </div>
+      <button class="registration" mat-raised-button type="button" (click) = "register()">Registrate</button>
+
+    </form>
+  </div>
+</div>
