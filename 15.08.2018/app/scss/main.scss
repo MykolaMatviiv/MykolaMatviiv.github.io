@@ -37,7 +37,7 @@ header{
 	left: 0;
 	margin: auto;
 	top: 60px;
-	max-width: 100%;
+	max-width: 150%;
 	width: 1250px;
 	padding: 15px 0;
 	transition: 400ms;
@@ -594,7 +594,7 @@ header{
 		min-height: calc(100vh - 125px);
 	}
 	.banner .banner-bg-img {
-		min-height: calc(100vh - 125px);
+		min-height: 600px;
 	}
 	.banner{
 		.mouse-down{
